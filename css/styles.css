@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* ANIMATIONS
+-------------------------------------------------- */
+#container {
+
+}
+
+#bouncy {
+	margin: 0 auto;
+	display: inline-block;
+	animation-name: bouncy;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform-origin: top;
+}
+
+/* footer p {
+	display: inline-block;
+	background-color: yellow;
+	font-size: 2rem;
+	animation-name: slideIn;
+	animation-duration: 3s;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+} */
+
+@keyframes bouncy {
+	from {
+		transform: scaleY(1) translateY(0);
+	}
+	15% {
+		transform: scaleY(1.1) translateY(25px);
+	}
+	25% {
+		transform: scaleY(1.2) translateY(50px);
+	}
+	35% {
+		transform: scaleY(1.3) translateY(75px);
+	}
+	55% {
+		transform: translateY(125px);
+	}
+	60% {
+		transform: scaleY(1.2) translateY(125px);
+	}
+	65% {
+		transform: scaleY(1.1) translateY(125px);
+	}
+	70% {
+		transform: scaleY(1.0) translateY(125px);
+	}
+	75% {
+		transform: scaleY(0.9) translateY(125px);
+	}
+	80% {
+		transform: scaleY(0.8) translateY(125px);
+	}
+	85% {
+		transform: scaleY(0.7) translateY(125px);
+	}
+	90% {
+		transform: scaleY(0.6) translateY(125px);
+	}
+	to {
+		transform: scaleY(0.5) translateY(125px);
+	}
+}
